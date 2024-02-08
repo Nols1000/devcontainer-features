@@ -1,0 +1,41 @@
+{
+  "basic_ubuntu": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "android-sdk": {}
+    },
+    "remoteUser": "vscode"
+  },
+  "basic_focal": {
+    "image": "mcr.microsoft.com/devcontainers/base:focal",
+    "features": {
+      "android-sdk": {}
+    },
+    "remoteUser": "vscode"
+  },
+  "basic_debian": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "android-sdk": {}
+    },
+    "remoteUser": "vscode"
+  },
+  "configure_platform": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "android-sdk": {
+        "platform": "33"
+      }
+    },
+    "remoteUser": "vscode"
+  },
+  "configure_build_tools": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "android-sdk": {
+        "build_tools": "33.0.0"
+      }
+    },
+    "remoteUser": "vscode"
+  }
+}
