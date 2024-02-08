@@ -2,6 +2,9 @@ name: "Release dev container features & Generate Documentation"
 on:
   workflow_dispatch:
 
+permissions:
+   pull-requests: write
+
 jobs:
   deploy:
     if: ${{ github.ref == 'refs/heads/main' }}
@@ -11,7 +14,7 @@ jobs:
       pull-requests: write
       packages: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: "Publish Features"
         uses: devcontainers/action@v1
