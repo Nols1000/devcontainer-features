@@ -1,0 +1,45 @@
+{
+  "name": "Android SDK",
+  "id": "android-sdk",
+  "version": "0.1.0",
+  "description": "A feature to set up the Android SDK for DevContainers, automating the creation of a consistent development environment with the necessary Android tools and platforms for seamless mobile application development.",
+  "documentationURL": "https://github.com/Nols1000/devcontainer-features/blob/main/src/android-sdk/README.md",
+  "containerEnv": {
+    "ANDROID_HOME": "/usr/local/lib/android",
+    "ANDROID_SDK_ROOT": "$ANDROID_HOME",
+    "PATH": "$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools"
+  },
+  "privileged": true,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.dart-code",
+        "Dart-Code.flutter"
+      ]
+    }
+  },
+  "options": {
+    "platform": {
+      "type": "string",
+      "default": "34",
+      "description": "SDK platform version"
+    },
+    "build_tools": {
+      "type": "string",
+      "default": "34.0.0",
+      "description": "SDK build-tools version"
+    },
+    "command_line_tools": {
+      "type": "string",
+      "default": "11076708",
+      "description": "Command line tools version"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/java:1": {}
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils",
+    "ghcr.io/devcontainers/features/java:1"
+  ]
+}
