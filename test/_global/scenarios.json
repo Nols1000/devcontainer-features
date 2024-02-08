@@ -1,13 +1,9 @@
 {
-    "color_and_hello": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-        "features": {
-            "color": {
-                "favorite": "purple"
-            },
-            "hello": {
-                "greeting": "Greetings"
-            }
-        }
+  "flutter_android_development": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "android-sdk": {},
+      "flutter-sdk": {}
     }
+  }
 }
