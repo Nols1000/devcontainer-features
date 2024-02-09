@@ -20,7 +20,6 @@ check_packages() {
 install() {
   # Prepare install folder
   mkdir -p "$ANDROID_HOME"
-  chown -R "$_REMOTE_USER:$_REMOTE_USER" "$ANDROID_HOME"
 
   # Login to remote user
   su - "$_REMOTE_USER"
@@ -32,8 +31,6 @@ install() {
   mv cmdline-tools "$ANDROID_HOME"/cmdline-tools/latest
   rm -f "command_line_tools.zip"
 
-  chown -R "$_REMOTE_USER:$_REMOTE_USER" "$ANDROID_HOME"
-
   # Add command line tools to $PATH
   export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 
@@ -42,6 +39,8 @@ install() {
 
   # Install platform-tools, build-tools, platforms
   yes | sdkmanager "platform-tools" "build-tools;${BUILD_TOOLS}" "platforms;android-${PLATFORM}" "emulator"
+
+  chown -R "$_REMOTE_USER:$_REMOTE_USER" "$ANDROID_HOME"
 
   echo "Installed Android:"
   echo "  platform:    $PLATFORM"

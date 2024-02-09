@@ -1,7 +1,7 @@
 {
   "name": "Android SDK",
   "id": "android-sdk",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A feature to set up the Android SDK for DevContainers, automating the creation of a consistent development environment with the necessary Android tools and platforms for seamless mobile application development.",
   "documentationURL": "https://github.com/Nols1000/devcontainer-features/blob/main/src/android-sdk/README.md",
   "containerEnv": {

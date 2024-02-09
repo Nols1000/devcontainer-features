@@ -88,7 +88,6 @@ install() {
 
   # Prepare install folder
   mkdir -p "$FLUTTER_HOME"
-  chown -R "$_REMOTE_USER:$_REMOTE_USER" "$FLUTTER_HOME"
   git config --global --add safe.directory "$FLUTTER_HOME"
 
   # Login to remote user
@@ -115,6 +114,9 @@ install() {
     flutter --disable-analytics
     dart --disable-analytics
   fi
+
+
+  chown -R "$_REMOTE_USER:$_REMOTE_USER" "$FLUTTER_HOME"
 
   echo "Installed Flutter:"
   echo "  channel: $info_channel"

@@ -1,7 +1,7 @@
 {
   "name": "Flutter SDK",
   "id": "flutter-sdk",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A feature to set up Flutter for DevContainers, providing an automated, consistent environment with the latest Flutter and Dart SDKs for streamlined development across teams.",
   "documentationURL": "https://github.com/Nols1000/devcontainer-features/blob/main/src/flutter-sdk/README.md",
   "containerEnv": {
