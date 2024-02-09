@@ -32,6 +32,8 @@ install() {
   mv cmdline-tools "$ANDROID_HOME"/cmdline-tools/latest
   rm -f "command_line_tools.zip"
 
+  chown -R "$_REMOTE_USER:$_REMOTE_USER" "$ANDROID_HOME"
+
   # Add command line tools to $PATH
   export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 

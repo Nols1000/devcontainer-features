@@ -1,7 +1,7 @@
 {
   "name": "Flutter SDK",
   "id": "flutter-sdk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A feature to set up Flutter for DevContainers, providing an automated, consistent environment with the latest Flutter and Dart SDKs for streamlined development across teams.",
   "documentationURL": "https://github.com/Nols1000/devcontainer-features/blob/main/src/flutter-sdk/README.md",
   "containerEnv": {
@@ -9,6 +9,17 @@
     "FLUTTER_ROOT": "$FLUTTER_HOME",
     "PUB_CACHE": "$FLUTTER_HOME/.pub-cache",
     "PATH": "$PATH:$FLUTTER_HOME/bin:$PUB_CACHE/bin"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.dart-code",
+        "Dart-Code.flutter"
+      ],
+      "settings": {
+        "dart.flutterShowEmulators": "always"
+      }
+    }
   },
   "options": {
     "channel": {
