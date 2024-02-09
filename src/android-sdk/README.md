@@ -19,13 +19,6 @@ A feature to set up the Android SDK for DevContainers, automating the creation o
 | build_tools | SDK build-tools version | string | 34.0.0 |
 | command_line_tools | Command line tools version | string | 11076708 |
 
-## Customizations
-
-### VS Code Extensions
-
-- `Dart-Code.dart-code`
-- `Dart-Code.flutter`
-
 
 
 ---

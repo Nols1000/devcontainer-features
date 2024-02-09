@@ -20,6 +20,13 @@ A feature to set up Flutter for DevContainers, providing an automated, consisten
 | arch | Flutter SDK architecture | string | x64 |
 | disable_analytics | Diable Flutter and Dart Analytics | boolean | true |
 
+## Customizations
+
+### VS Code Extensions
+
+- `Dart-Code.dart-code`
+- `Dart-Code.flutter`
+
 
 
 ---
